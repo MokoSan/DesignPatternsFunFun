@@ -44,9 +44,9 @@ module Composite =
                     | x :: xs -> x :: remove xs 
                 components <- remove components
             member __.Display() =
-                printfn "%s: Displaying all Leafs of the Composite." DesignPatternName
-                components |> List.iter ( fun x -> printfn "%s: %s" DesignPatternName x.Name )
-
+                printfn "%s: Displaying all Leafs of the Composite:" DesignPatternName
+                components |> List.iter ( fun x -> printf "%s " x.Name )
+                printf "\n"
     let main() =
         let composite = Composite("Composite")
 
