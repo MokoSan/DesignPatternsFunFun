@@ -1,4 +1,6 @@
-# DesignPatterns Fun Fun
+# Design Patterns Fun Fun
+
+4 s**ts and giggles 
 
 Creational Patterns
 -------------------
