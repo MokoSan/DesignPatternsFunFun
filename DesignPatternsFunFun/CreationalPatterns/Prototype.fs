@@ -22,8 +22,8 @@ module Prototype =
             member __.Clone() = PrototypeB( name ) :> obj
 
     let main() =
-        let prototypeA : IPrototype = ( PrototypeA( "Link ") :> IPrototype )
+        let prototypeA : IPrototype = ( PrototypeA( "Link ") :> IPrototype ).Clone() :?> IPrototype
         printfn "%s: Creating new Prototype of Prototype A with Name: %s" DesignPatternName prototypeA.Name 
-        let prototypeB : IPrototype = ( PrototypeB( "Zelda" ) :> IPrototype )
+        let prototypeB : IPrototype = ( PrototypeB( "Zelda" ) :> IPrototype ).Clone() :?> IPrototype
         printfn "%s: Creating new Prototype of Prototype B with Name: %s" DesignPatternName prototypeB.Name 
         0
