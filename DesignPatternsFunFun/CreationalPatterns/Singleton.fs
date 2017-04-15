@@ -5,6 +5,7 @@ module Singleton =
     [<Literal>]
     let DesignPatternName = "Singleton"
 
+    [<Sealed>]
     type Singleton private() = 
         static let mutable instance : Singleton Lazy = lazy( Singleton() )
         static member Instance      : Singleton      = instance.Value 
