@@ -1,6 +1,6 @@
 # Design Patterns Fun Fun
 
-4 s**ts && giggles 
+Design Patterns in F# 4 s**ts && giggles 
 
 Creational Patterns
 -------------------
