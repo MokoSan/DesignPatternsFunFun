@@ -37,6 +37,7 @@ module Builder =
         override __.ReleaseProduct() =
             concreteProduct 
 
+    [<Sealed>]
     type Director() =
         static member Construct(builder : AbstractBuilder) : AbstractProduct = 
             builder.BuildPartA() 
