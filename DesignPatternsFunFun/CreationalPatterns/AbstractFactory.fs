@@ -1,6 +1,8 @@
 (* Provide an interface for creating families of related or dependent objects without specifying their concrete classes. *)
 
 module AbstractFactory = 
+    [<Literal>]
+    let DesignPatternName = "AbstractFactory"
 
     [<AbstractClass>]
     type AbstractProductA() = 
@@ -35,9 +37,9 @@ module AbstractFactory =
 
     let main() =
         let factory : AbstractFactory = ConcreteFactory() :> AbstractFactory 
-        printfn "Created an instance of an Abstract Factory.\n"
+        printfn "%s: Created an instance of an Abstract Factory." DesignPatternName
         let productA : AbstractProductA = factory.CreateProductA("Product A") 
-        printfn "Created Product A.\n"
+        printfn "%s: Created Product A." DesignPatternName
         let productB : AbstractProductB = factory.CreateProductB("Product B")
-        printfn "Created Product B.\n"
+        printfn "%s: Created Product B." DesignPatternName
         0
