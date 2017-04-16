@@ -1,5 +1,5 @@
 (* Compose objects into tree structures to represent part-whole hierarchies. 
-Composite lets clients treat individual objects and compositions of objects uniformly. *)
+   Composite lets clients treat individual objects and compositions of objects uniformly. *)
 
 module Composite = 
 
@@ -41,7 +41,7 @@ module Composite =
                     | x :: xs when x.Name = componentToRemove.Name -> 
                         printfn "%s: Successfully removing %s from the components" DesignPatternName componentToRemove.Name
                         xs 
-                    | x :: xs -> x :: remove xs 
+                    | x :: xs                                      -> x :: remove xs 
                 components <- remove components
             member __.Display() =
                 printfn "%s: Displaying all Leafs of the Composite:" DesignPatternName
