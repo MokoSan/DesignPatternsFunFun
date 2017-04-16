@@ -42,4 +42,5 @@ module AbstractFactory =
         printfn "%s: Created Product A." DesignPatternName
         let productB : AbstractProductB = factory.CreateProductB("Product B")
         printfn "%s: Created Product B." DesignPatternName
+
         0

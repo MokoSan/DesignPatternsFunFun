@@ -26,3 +26,5 @@ module Proxy =
         let subject : ISubject = ConcreteSubject() :> ISubject 
         let subjectProxy       = SubjectProxy( subject )
         ( subjectProxy :> ISubject ).Operate()
+
+        0

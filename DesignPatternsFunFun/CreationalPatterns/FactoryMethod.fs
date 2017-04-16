@@ -45,4 +45,5 @@ module FactoryMethod =
         for productCreator in productCreators do
             let product = productCreator.Create()
             printfn "%s: Created Product - %s" DesignPatternName product.Name 
+
         0

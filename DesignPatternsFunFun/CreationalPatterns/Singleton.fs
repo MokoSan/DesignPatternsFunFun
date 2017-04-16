@@ -15,3 +15,5 @@ module Singleton =
     let main() =
         let singleton = Singleton.Instance
         singleton.DoSomething()
+
+        0
