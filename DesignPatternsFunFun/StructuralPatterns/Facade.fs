@@ -16,7 +16,6 @@ module Facade =
         member __.MethodB() =
             printfn "%s: MethodB() called." DesignPatternName
 
-
     [<Sealed>]
     type ComponentC() = 
         member __.MethodC() =
