@@ -11,6 +11,7 @@ module Flyweight =
         abstract member Name    : string with get
         abstract member Operate : unit -> unit 
 
+    [<Sealed>]
     type ConcreteFlyweight( name : string ) =
         interface IFlyweight with
             member __.Name = name
